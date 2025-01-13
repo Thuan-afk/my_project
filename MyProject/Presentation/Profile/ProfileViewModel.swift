@@ -10,6 +10,7 @@ class ProfileViewModel {
     let updateTap = PublishRelay<Void>()
     
     //output
+    let findAJob = PublishRelay<Bool>()
     let userInfo = BehaviorRelay<UserInfo?>(value: nil)
     let isEditing = BehaviorRelay<Bool>(value: false)
     let error = PublishRelay<String>()
@@ -18,10 +19,13 @@ class ProfileViewModel {
     var userInfoValue: UserInfo? = nil
     
     let firebaseFirestoreService: FirebaseFirestoreServiceProtocol
+    let firebaseRemoteService: FirebaseRemoteService
     let disposeBag = DisposeBag()
     
-    init(firebaseFirestoreService: FirebaseFirestoreServiceProtocol = FirebaseFirestoreService()) {
+    init(firebaseFirestoreService: FirebaseFirestoreServiceProtocol = FirebaseFirestoreService(),
+         firebaseRemoteService: FirebaseRemoteService = FirebaseRemoteService()) {
         self.firebaseFirestoreService = firebaseFirestoreService
+        self.firebaseRemoteService = firebaseRemoteService
         
         name.subscribe(
             onNext: { [weak self] name in
@@ -56,6 +60,14 @@ class ProfileViewModel {
         .disposed(by: disposeBag)
     }
     
+    func fetchConfig() {
+        firebaseRemoteService.fetchRemoteConfig { [weak self] findAJob in
+            DispatchQueue.main.async {
+                self?.findAJob.accept(findAJob)
+            }
+        }
+    }
+
     func getUserInfo() {
         guard let userId = UserDefaults.standard.string(forKey: UserDefaultsKey.USER_ID) else { return }
         firebaseFirestoreService.readUser(userId: userId)

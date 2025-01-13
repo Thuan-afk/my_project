@@ -30,6 +30,14 @@ class ProfileViewController: BaseViewController {
         return v
     }()
     
+    private lazy var findAJobItemView: ProfileItemView = {
+        let v = ProfileItemView()
+        v.setIcon(icon: "sparkle.magnifyingglass")
+        v.setTextLabel(text: "Find a job")
+        v.isHidden = true
+        return v
+    }()
+    
     private lazy var editButton: AppStyle1Button = {
         let v = AppStyle1Button()
         v.setTitle("Update", for: .normal)
@@ -42,6 +50,7 @@ class ProfileViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        viewModel.fetchConfig()
         viewModel.getUserInfo()
     }
     
@@ -50,6 +59,7 @@ class ProfileViewController: BaseViewController {
         stackView.addArrangedSubview(nameItemView)
         stackView.addArrangedSubview(genderItemView)
         stackView.addArrangedSubview(addressItemView)
+        stackView.addArrangedSubview(findAJobItemView)
         view.addSubview(editButton)
     }
     
@@ -68,6 +78,10 @@ class ProfileViewController: BaseViewController {
         }
         
         addressItemView.snp.makeConstraints { make in
+            make.height.equalTo(50)
+        }
+        
+        findAJobItemView.snp.makeConstraints { make in
             make.height.equalTo(50)
         }
         
@@ -94,6 +108,13 @@ class ProfileViewController: BaseViewController {
         
         editButton.rx.tap
             .bind(to: viewModel.updateTap)
+            .disposed(by: disposeBag)
+        
+        viewModel.findAJob
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] findAJob in
+                self?.findAJobItemView.isHidden = !findAJob
+            })
             .disposed(by: disposeBag)
         
         viewModel.isEditing
