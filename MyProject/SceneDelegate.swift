@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  MyProject
-//
-//  Created by AnySES on 10/1/25.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -18,7 +11,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         
-        let initialViewController = MyViewController()
+        let userId = UserDefaults.standard.string(forKey: UserDefaultsKey.USER_ID)
+        let initialViewController = userId != "" ? HomeViewController() : LoginViewController()
+//        let initialViewController = LoginViewController()
         initialViewController.view.backgroundColor = .white
         window.rootViewController = initialViewController
         

@@ -1,10 +1,3 @@
-//
-//  BaseViewController.swift
-//  MyProject
-//
-//  Created by AnySES on 10/1/25.
-//
-
 import Foundation
 import UIKit
 
@@ -15,9 +8,11 @@ class BaseViewController: UIViewController {
         
         setupViews()
         updateConstraints()
+        bindViewModel()
     }
     
     func setupViews() {}
     func updateConstraints() {}
+    func bindViewModel() {}
 
 }

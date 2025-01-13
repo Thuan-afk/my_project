@@ -10,6 +10,10 @@ target 'MyProject' do
   pod 'RxCocoa'
   pod 'SnapKit'
 
+  pod 'Firebase'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+
   target 'MyProjectTests' do
     inherit! :search_paths
     # Pods for testing
