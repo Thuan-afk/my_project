@@ -15,6 +15,7 @@ target 'MyProject' do
   pod 'Firebase/RemoteConfig'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
+  pod 'Firebase/Crashlytics'
 
   target 'MyProjectTests' do
     inherit! :search_paths
