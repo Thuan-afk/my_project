@@ -6,9 +6,10 @@ target 'MyProject' do
   use_frameworks!
 
   # Pods for MyProject
+  pod 'SnapKit'
+
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'SnapKit'
 
   pod 'Firebase'
   pod 'Firebase/Auth'
@@ -16,6 +17,8 @@ target 'MyProject' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'Firebase/Crashlytics'
+
+  pod 'RealmSwift'
 
   target 'MyProjectTests' do
     inherit! :search_paths

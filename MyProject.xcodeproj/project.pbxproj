@@ -18,6 +18,15 @@
 		AC6C496A2D350AF8000E5FE8 /* FirebaseRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C49692D350AF8000E5FE8 /* FirebaseRemoteService.swift */; };
 		AC6C49702D35272F000E5FE8 /* FirebaseStorageServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C496F2D35272F000E5FE8 /* FirebaseStorageServiceProtocol.swift */; };
 		AC6C49722D352818000E5FE8 /* FirebaseStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C49712D352818000E5FE8 /* FirebaseStorageService.swift */; };
+		AC6C49762D3616EC000E5FE8 /* ResearchsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C49752D3616EC000E5FE8 /* ResearchsViewModel.swift */; };
+		AC6C49792D361F83000E5FE8 /* ResearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C49782D361F83000E5FE8 /* ResearchTableViewCell.swift */; };
+		AC6C497C2D364CB1000E5FE8 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C497B2D364CB1000E5FE8 /* RealmViewController.swift */; };
+		AC6C497F2D3658D7000E5FE8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C497E2D3658D7000E5FE8 /* Book.swift */; };
+		AC6C49812D3659E2000E5FE8 /* RealmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C49802D3659E2000E5FE8 /* RealmViewModel.swift */; };
+		AC6C49842D365F09000E5FE8 /* RealmServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C49832D365F09000E5FE8 /* RealmServiceProtocol.swift */; };
+		AC6C49862D365F52000E5FE8 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C49852D365F52000E5FE8 /* RealmService.swift */; };
+		AC6C49892D3762D0000E5FE8 /* RealmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C49882D3762D0000E5FE8 /* RealmTableViewCell.swift */; };
+		AC6C498B2D3764DA000E5FE8 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C498A2D3764DA000E5FE8 /* BaseTableViewCell.swift */; };
 		AC73E0822D30D667004A0ED4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73E0812D30D667004A0ED4 /* BaseViewController.swift */; };
 		AC73E0852D30DC8F004A0ED4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73E0842D30DC8F004A0ED4 /* HomeViewController.swift */; };
 		ACD449652D30C6ED00341D49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD449642D30C6ED00341D49 /* AppDelegate.swift */; };
@@ -73,6 +82,15 @@
 		AC6C49692D350AF8000E5FE8 /* FirebaseRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRemoteService.swift; sourceTree = "<group>"; };
 		AC6C496F2D35272F000E5FE8 /* FirebaseStorageServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageServiceProtocol.swift; sourceTree = "<group>"; };
 		AC6C49712D352818000E5FE8 /* FirebaseStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageService.swift; sourceTree = "<group>"; };
+		AC6C49752D3616EC000E5FE8 /* ResearchsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchsViewModel.swift; sourceTree = "<group>"; };
+		AC6C49782D361F83000E5FE8 /* ResearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchTableViewCell.swift; sourceTree = "<group>"; };
+		AC6C497B2D364CB1000E5FE8 /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
+		AC6C497E2D3658D7000E5FE8 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		AC6C49802D3659E2000E5FE8 /* RealmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewModel.swift; sourceTree = "<group>"; };
+		AC6C49832D365F09000E5FE8 /* RealmServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServiceProtocol.swift; sourceTree = "<group>"; };
+		AC6C49852D365F52000E5FE8 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		AC6C49882D3762D0000E5FE8 /* RealmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTableViewCell.swift; sourceTree = "<group>"; };
+		AC6C498A2D3764DA000E5FE8 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		AC73E0812D30D667004A0ED4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AC73E0842D30DC8F004A0ED4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ACD449612D30C6ED00341D49 /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,8 +189,8 @@
 			children = (
 				AC6C49662D34F715000E5FE8 /* Models */,
 				AC6C495F2D34C211000E5FE8 /* Views */,
-				ACF892982D31151500E89ABB /* ProfileViewController.swift */,
 				AC6C495D2D34BC04000E5FE8 /* ProfileViewModel.swift */,
+				ACF892982D31151500E89ABB /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -210,6 +228,60 @@
 			path = FirebaseStorage;
 			sourceTree = "<group>";
 		};
+		AC6C49742D361630000E5FE8 /* Researchs */ = {
+			isa = PBXGroup;
+			children = (
+				AC6C49772D361F71000E5FE8 /* Views */,
+				AC6C49752D3616EC000E5FE8 /* ResearchsViewModel.swift */,
+				ACF8929B2D3115B500E89ABB /* ResearchsViewController.swift */,
+			);
+			path = Researchs;
+			sourceTree = "<group>";
+		};
+		AC6C49772D361F71000E5FE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC6C49782D361F83000E5FE8 /* ResearchTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC6C497A2D364C01000E5FE8 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				AC6C497D2D3658C6000E5FE8 /* Model */,
+				AC6C49872D3762B4000E5FE8 /* Views */,
+				AC6C49802D3659E2000E5FE8 /* RealmViewModel.swift */,
+				AC6C497B2D364CB1000E5FE8 /* RealmViewController.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		AC6C497D2D3658C6000E5FE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC6C497E2D3658D7000E5FE8 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC6C49822D365EA8000E5FE8 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				AC6C49832D365F09000E5FE8 /* RealmServiceProtocol.swift */,
+				AC6C49852D365F52000E5FE8 /* RealmService.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		AC6C49872D3762B4000E5FE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC6C49882D3762D0000E5FE8 /* RealmTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		AC73E07D2D30D57B004A0ED4 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +289,8 @@
 				ACF892872D31003200E89ABB /* Login */,
 				AC73E07E2D30D5B5004A0ED4 /* Home */,
 				AC6C495C2D34BBDA000E5FE8 /* Profile */,
+				AC6C49742D361630000E5FE8 /* Researchs */,
+				AC6C497A2D364C01000E5FE8 /* Realm */,
 				ACF892912D310EC800E89ABB /* Views */,
 			);
 			path = Presentation;
@@ -225,7 +299,6 @@
 		AC73E07E2D30D5B5004A0ED4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				ACF8929A2D31154300E89ABB /* Views */,
 				AC73E0842D30DC8F004A0ED4 /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -235,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				AC73E0812D30D667004A0ED4 /* BaseViewController.swift */,
+				AC6C498A2D3764DA000E5FE8 /* BaseTableViewCell.swift */,
 				ACF8928C2D31024A00E89ABB /* APIService.swift */,
 			);
 			path = Base;
@@ -300,8 +374,8 @@
 		ACF892872D31003200E89ABB /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				ACF892882D31004D00E89ABB /* LoginViewController.swift */,
 				ACF8928A2D3101D800E89ABB /* LoginViewModel.swift */,
+				ACF892882D31004D00E89ABB /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -324,17 +398,10 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		ACF8929A2D31154300E89ABB /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				ACF8929B2D3115B500E89ABB /* ResearchsViewController.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		ACF8929D2D312BDC00E89ABB /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				AC6C49822D365EA8000E5FE8 /* Realm */,
 				AC6C496E2D3526F0000E5FE8 /* FirebaseStorage */,
 				AC6C496D2D3526C9000E5FE8 /* FirebaseRemoteConfig */,
 				ACF892A32D31340000E89ABB /* FirebaseFirestore */,
@@ -631,12 +698,20 @@
 				AC73E0822D30D667004A0ED4 /* BaseViewController.swift in Sources */,
 				ACF892A52D31342B00E89ABB /* FirebaseFirestoreServiceProtocol.swift in Sources */,
 				ACF892A72D31344A00E89ABB /* FirebaseFirestoreService.swift in Sources */,
+				AC6C49892D3762D0000E5FE8 /* RealmTableViewCell.swift in Sources */,
+				AC6C49792D361F83000E5FE8 /* ResearchTableViewCell.swift in Sources */,
 				AC6C49702D35272F000E5FE8 /* FirebaseStorageServiceProtocol.swift in Sources */,
+				AC6C49762D3616EC000E5FE8 /* ResearchsViewModel.swift in Sources */,
+				AC6C49862D365F52000E5FE8 /* RealmService.swift in Sources */,
 				ACF8928B2D3101D800E89ABB /* LoginViewModel.swift in Sources */,
 				AC6C49612D34C232000E5FE8 /* ProfileItemView.swift in Sources */,
 				AC6C495B2D34BB68000E5FE8 /* UserDefaultsKey.swift in Sources */,
 				ACD449672D30C6ED00341D49 /* SceneDelegate.swift in Sources */,
+				AC6C498B2D3764DA000E5FE8 /* BaseTableViewCell.swift in Sources */,
+				AC6C49812D3659E2000E5FE8 /* RealmViewModel.swift in Sources */,
 				ACF892992D31151500E89ABB /* ProfileViewController.swift in Sources */,
+				AC6C497C2D364CB1000E5FE8 /* RealmViewController.swift in Sources */,
+				AC6C497F2D3658D7000E5FE8 /* Book.swift in Sources */,
 				ACF892892D31004D00E89ABB /* LoginViewController.swift in Sources */,
 				AC6C496A2D350AF8000E5FE8 /* FirebaseRemoteService.swift in Sources */,
 				AC6C495E2D34BC04000E5FE8 /* ProfileViewModel.swift in Sources */,
@@ -648,6 +723,7 @@
 				AC6C49682D34F727000E5FE8 /* UserInfo.swift in Sources */,
 				AC6C49722D352818000E5FE8 /* FirebaseStorageService.swift in Sources */,
 				AC6C49632D34CA7E000E5FE8 /* AppStyle1Button.swift in Sources */,
+				AC6C49842D365F09000E5FE8 /* RealmServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

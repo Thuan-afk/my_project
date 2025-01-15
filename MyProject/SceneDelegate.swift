@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let initialViewController = userId != "" ? HomeViewController() : LoginViewController()
 //        let initialViewController = LoginViewController()
         initialViewController.view.backgroundColor = .white
-        window.rootViewController = initialViewController
+        window.rootViewController = UINavigationController(rootViewController: initialViewController)
         
         self.window = window
         window.makeKeyAndVisible()
